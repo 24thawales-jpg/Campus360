@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports - Campus360</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Campus360</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="classroom.html">Classrooms</a>
+            <a href="canteen.html">Canteen</a>
+            <a href="sports.html">Sports</a>
+            <a href="events.html">Events</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+            <h1>Sports Facility Booking</h1>
+            <p>Book a sports facility for your preferred time.</p>
+        </section>
+
+        <section class="sports-section">
+
+            <div class="sports-container">
+
+                <div class="sports-card">
+                    <h3>Basketball Court</h3>
+                    <p>Outdoor basketball court</p>
+                    <span class="available">Available</span>
+
+                    <label>Select Date</label>
+                    <input type="date" class="sports-date">
+
+                    <label>Select Time</label>
+                    <select class="sports-time">
+                        <option value="">Choose time</option>
+                        <option>09:00 AM - 10:00 AM</option>
+                        <option>10:00 AM - 11:00 AM</option>
+                        <option>04:00 PM - 05:00 PM</option>
+                        <option>05:00 PM - 06:00 PM</option>
+                    </select>
+
+                    <button onclick="bookSports('Basketball Court', this)">
+                        Book Court
+                    </button>
+                </div>
+
+
+                <div class="sports-card">
+                    <h3>Badminton Court</h3>
+                    <p>Indoor badminton court</p>
+                    <span class="available">Available</span>
+
+                    <label>Select Date</label>
+                    <input type="date" class="sports-date">
+
+                    <label>Select Time</label>
+                    <select class="sports-time">
+                        <option value="">Choose time</option>
+                        <option>09:00 AM - 10:00 AM</option>
+                        <option>10:00 AM - 11:00 AM</option>
+                        <option>04:00 PM - 05:00 PM</option>
+                        <option>05:00 PM - 06:00 PM</option>
+                    </select>
+
+                    <button onclick="bookSports('Badminton Court', this)">
+                        Book Court
+                    </button>
+                </div>
+
+
+                <div class="sports-card">
+                    <h3>Table Tennis</h3>
+                    <p>Indoor table tennis facility</p>
+                    <span class="available">Available</span>
+
+                    <label>Select Date</label>
+                    <input type="date" class="sports-date">
+
+                    <label>Select Time</label>
+                    <select class="sports-time">
+                        <option value="">Choose time</option>
+                        <option>09:00 AM - 10:00 AM</option>
+                        <option>10:00 AM - 11:00 AM</option>
+                        <option>04:00 PM - 05:00 PM</option>
+                        <option>05:00 PM - 06:00 PM</option>
+                    </select>
+
+                    <button onclick="bookSports('Table Tennis', this)">
+                        Book Facility
+                    </button>
+                </div>
+
+
+                <div class="sports-card">
+                    <h3>Football Ground</h3>
+                    <p>College football ground</p>
+                    <span class="occupied">Occupied</span>
+
+                    <label>Select Date</label>
+                    <input type="date" class="sports-date">
+
+                    <label>Select Time</label>
+                    <select class="sports-time">
+                        <option value="">Choose time</option>
+                        <option>09:00 AM - 10:00 AM</option>
+                        <option>04:00 PM - 05:00 PM</option>
+                    </select>
+
+                    <button class="disabled-button" disabled>
+                        Currently Unavailable
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus360 | Connecting Campus Life</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

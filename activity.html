@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Activity - Campus360</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            Campus360
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="classroom.html">Classrooms</a>
+            <a href="canteen.html">Canteen</a>
+            <a href="sports.html">Sports</a>
+            <a href="events.html">Events</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Page Header -->
+
+        <section class="activity-page-header">
+
+            <div class="header-content">
+
+                <div class="header-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>YOUR CAMPUS</p>
+
+                    <h1>My Activity</h1>
+
+                    <span>
+                        Keep track of everything you do on Campus360.
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Main Activity Area -->
+
+        <section class="activity-section">
+
+            <!-- Section Heading -->
+
+            <div class="activity-title">
+
+                <div>
+                    <p class="small-title">
+                        ACTIVITY CENTER
+                    </p>
+
+                    <h2>Your recent activity</h2>
+
+                    <p>
+                        View your bookings, orders and event registrations.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Filters -->
+
+            <div class="activity-tabs">
+
+                <button
+                    class="active-tab"
+                    onclick="showActivity('all')">
+                    All Activity
+                </button>
+
+                <button onclick="showActivity('booking')">
+                    Bookings
+                </button>
+
+                <button onclick="showActivity('order')">
+                    Orders
+                </button>
+
+                <button onclick="showActivity('event')">
+                    Events
+                </button>
+
+            </div>
+
+
+            <!-- Activity List -->
+
+            <div id="activityList">
+
+                <div class="empty-activity">
+
+                    <div class="empty-circle">
+                        <span>+</span>
+                    </div>
+
+                    <h3>No activity yet</h3>
+
+                    <p>
+                        Your classroom bookings, food orders and
+                        event registrations will appear here.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-left">
+
+            <strong>Campus360</strong>
+
+            <p>
+                Connecting campus life through one platform.
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Campus360
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

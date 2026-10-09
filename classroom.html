@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classrooms - Campus360</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Campus360</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="classroom.html">Classrooms</a>
+            <a href="canteen.html">Canteen</a>
+            <a href="sports.html">Sports</a>
+            <a href="events.html">Events</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-heading">
+            <h1>Classroom Availability</h1>
+            <p>Find and reserve an available classroom.</p>
+        </section>
+
+        <section class="classroom-section">
+
+            <div class="filter-box">
+
+                <div>
+                    <label>Select Date</label>
+                    <input type="date" id="roomDate">
+                </div>
+
+                <div>
+                    <label>Select Time</label>
+                    <select id="roomTime">
+                        <option value="">Choose time</option>
+                        <option>09:00 AM - 10:00 AM</option>
+                        <option>10:00 AM - 11:00 AM</option>
+                        <option>11:00 AM - 12:00 PM</option>
+                        <option>12:00 PM - 01:00 PM</option>
+                        <option>02:00 PM - 03:00 PM</option>
+                        <option>03:00 PM - 04:00 PM</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="room-container">
+
+                <div class="room-card">
+                    <div>
+                        <h3>Room A101</h3>
+                        <p>Capacity: 60 students</p>
+                    </div>
+
+                    <span class="available">Available</span>
+
+                    <button onclick="bookRoom('Room A101')">
+                        Book Room
+                    </button>
+                </div>
+
+
+                <div class="room-card">
+                    <div>
+                        <h3>Room A102</h3>
+                        <p>Capacity: 40 students</p>
+                    </div>
+
+                    <span class="occupied">Occupied</span>
+
+                    <button class="disabled-button" disabled>
+                        Not Available
+                    </button>
+                </div>
+
+
+                <div class="room-card">
+                    <div>
+                        <h3>Room B201</h3>
+                        <p>Capacity: 50 students</p>
+                    </div>
+
+                    <span class="available">Available</span>
+
+                    <button onclick="bookRoom('Room B201')">
+                        Book Room
+                    </button>
+                </div>
+
+
+                <div class="room-card">
+                    <div>
+                        <h3>Room B202</h3>
+                        <p>Capacity: 30 students</p>
+                    </div>
+
+                    <span class="available">Available</span>
+
+                    <button onclick="bookRoom('Room B202')">
+                        Book Room
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus360 | Connecting Campus Life</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
